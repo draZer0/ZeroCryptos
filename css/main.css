@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: green;
+}
+
+.header-container {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.header-logo {
+  float: left;
+  font-family: "Crete Round", serif;
+  font-size: 2em;
+  margin: 25px;
+  color: #0569a3;
+}
+
+.nav-toggle {
+  display: block;
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: 0.75em;
+  border: 1px grey solid;
+  margin: 1em 1em 0 0;
+}
+
+ul {
+  clear: left;
+  list-style-type: none;
+  color: white;
+  padding-left: 0;
+}
+
+i {
+  color: #7dcdfd;
+}
+
+.nav-toggle__toggled {
+  display: none;
+}
+
+li {
+  margin: 20px;
+  padding: 1em 0 1em 1.4em;
+  border-top: 1px grey solid;
+}
+
+a {
+  color: #7dcdfd;
+  transition: 0.5s;
+}
+a:hover {
+  color: #0099f0;
+}
+
+@media screen and (min-width: 650px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  nav {
+    float: right;
+  }
+
+  ul {
+    display: block !important;
+  }
+
+  li {
+    float: left;
+    border-top: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
