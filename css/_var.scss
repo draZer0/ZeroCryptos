@@ -9,3 +9,22 @@ $laptop: 1024px;
 $color_green: rgba(11, 207, 99, 1);
 $color_darkgreen: rgba(8, 163, 77, 1);
 $color_lightgreen: rgba(17, 239, 117, 1);
+
+// Slideshow
+$t: 5s;
+$e1: cubic-bezier(0.8, 0.00, 0.1, 1);
+$e2: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+$er: linear;
+
+$color: $color_darkgreen;
+$font: 'Abril Fatface', sans-serif;
+
+$image1: url(https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+$image2: url(https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+$image3: url(https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+$image4: url(https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+$image5: url(https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+$image6: url(https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+
+$slides: 6;
+$images: $image1 $image2 $image3 $image4 $image5 $image6;
