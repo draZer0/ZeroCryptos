@@ -17,10 +17,74 @@
 
 }
 
+@import 'reset';
+@import 'var';
+
+.header-container {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.header-logo {
+  float: left;
+  font-family: 'Crete Round', serif;
+  font-size: 2em;
+  margin: 25px;
+  color: $color_green;
+
+}
+
 .zerocryptos{
   z-index: -1;
 	position: absolute;
 	height: 100%;
 	width: 100%;
 
+	&__shutters{
+		position: absolute;
+		height: 150vmax;
+		width: 150vmax;
+		left: calc(50% - 75vmax);
+		top: calc(50% - 75vmax);
+		pointer-events: none;
+		z-index: 2;
+		@keyframes rotateFrame{
+			0%{ transform: rotate(0deg);}
+			100%{ transform: rotate(180deg);}
+		}
+		animation: rotateFrame $t*4 $er infinite;
+
+		&:before, &:after{
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left: 50%;
+			transform: translate3d(-50%, 0, 0);
+			background-color: $color;
+			pointer-events: auto;
+		}
+		&:before{
+			bottom: 50%;
+			@keyframes openTop{
+				0%{ transform: translate3d(-50%, 0, 0); animation-timing-function: $e1; }
+				40%{ transform: translate3d(-50%, -65vmax, 0); animation-timing-functon: $e2; }
+				70%{ transform: translate3d(-50%, -65vmax, 0); animation-timing-functon: $e2; }
+				100%{ transform: translate3d(-50%, 0, 0); animation-timing-function: $e2; }
+			}
+			animation: openTop $t*2 infinite;
+		}
+		&:after{
+			top: 50%;
+			@keyframes openBottom{
+				0%{ transform: translate3d(-50%, 0, 0); animation-timing-function: $e1; }
+				40%{ transform: translate3d(-50%, 65vmax, 0); animation-timing-functon: $e2; }
+				70%{ transform: translate3d(-50%, 65vmax, 0); animation-timing-functon: $e2; }
+				100%{ transform: translate3d(-50%, 0, 0); animation-timing-function: $e2; }
+			}
+			animation: openBottom $t*2 infinite;
+		}
+	}
 }
