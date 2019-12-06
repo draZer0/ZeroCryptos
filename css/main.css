@@ -15,6 +15,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   border: 0;
@@ -62,8 +63,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: green;
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .header-container {
@@ -78,65 +81,7 @@ body {
   font-family: "Crete Round", serif;
   font-size: 2em;
   margin: 25px;
-  color: #0569a3;
-}
-
-.nav-toggle {
-  display: block;
-  float: right;
-  color: white;
-  text-decoration: none;
-  padding: 0.75em;
-  border: 1px grey solid;
-  margin: 1em 1em 0 0;
-}
-
-ul {
-  clear: left;
-  list-style-type: none;
-  color: white;
-  padding-left: 0;
-}
-
-i {
-  color: #7dcdfd;
-}
-
-.nav-toggle__toggled {
-  display: none;
-}
-
-li {
-  margin: 20px;
-  padding: 1em 0 1em 1.4em;
-  border-top: 1px grey solid;
-}
-
-a {
-  color: #7dcdfd;
-  transition: 0.5s;
-}
-a:hover {
-  color: #0099f0;
-}
-
-@media screen and (min-width: 650px) {
-  .nav-toggle {
-    display: none;
-  }
-
-  nav {
-    float: right;
-  }
-
-  ul {
-    display: block !important;
-  }
-
-  li {
-    float: left;
-    border-top: none;
-  }
+  color: #0bcf63;
 }
 
 /*# sourceMappingURL=main.css.map */
